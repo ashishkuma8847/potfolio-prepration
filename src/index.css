@@ -1,1 +1,14 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@layer utilities{
+  .container{
+     @apply max-w-[1210px] w-full px-5 mx-auto;
+  }
+ }
+@theme {
+    --font-customfontinter:['"Inter"', 'serif'] ;
+    --font-customfontpopins:['"Poppins"', 'serif'];
+  }
+  
+  
