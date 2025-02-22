@@ -12,8 +12,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="h-full bg-[#f8ebe0] items-center justify-center fixed flex">
-        <div className="relative text-black h-[300px] flex flex-col gap-10 justify-center items-center w-[200px] bg-[#f8ebe0] font-customfontinter">
+      <div className="h-full bg-[#2c2c2c] items-center justify-center fixed flex">
+        <div className="relative text-white h-[300px] flex flex-col gap-10 justify-center items-center w-[200px] bg-[#2c2c2c] font-customfontinter">
           <div
             className={`absolute left-0 w-full transition-all duration-300 text-center  
           ${
@@ -28,19 +28,19 @@ const Header = () => {
               : ""
           }`}
           >
-            <div className="h-full w-full bg-[#eaded0]">
-              <div className="bg-[#f8ebe0] h-[50px] w-full rounded-br-2xl rounded-bl-2xl"></div>
+            <div className="h-full w-full bg-[#0D0D0D]">
+              <div className="bg-[#2c2c2c] h-[50px] w-full rounded-br-2xl rounded-bl-2xl"></div>
             </div>
-            <div className="bg-[#eaded0] h-[50px] w-full"></div>
-            <div className="h-full w-full bg-[#eaded0]">
-              <div className="h-[50px] bg-[#f8ebe0] w-full rounded-tr-2xl rounded-tl-2xl"></div>
+            <div className="bg-[#0D0D0D] h-[50px] w-full"></div>
+            <div className="h-full w-full bg-[#0D0D0D]">
+              <div className="h-[50px] bg-[#2c2c2c] w-full rounded-tr-2xl rounded-tl-2xl"></div>
             </div>
           </div>
           <Link to={"/"}>
             <button
               onClick={() => setData("varient")}
               className={`p-2 relative transition-all duration-300 ${
-                data === "varient" ? "z-50 text-black" : "bg-transparent"
+                data === "varient" ? "z-50 " : "bg-transparent"
               }`}
             >
               Home
@@ -50,7 +50,7 @@ const Header = () => {
           <button
             onClick={() => setData("varient1")}
             className={`p-2 relative ${
-              data === "varient1" ? "z-50 text-black" : "bg-transparent"
+              data === "varient1" ? "z-50 " : "bg-transparent"
             }`}
           >
             About
@@ -58,7 +58,7 @@ const Header = () => {
           <button
             onClick={() => setData("varient2")}
             className={`p-2 relative ${
-              data === "varient2" ? "z-50 text-black" : "bg-transparent"
+              data === "varient2" ? "z-50 " : "bg-transparent"
             }`}
           >
             Contact
@@ -66,7 +66,7 @@ const Header = () => {
           <button
             onClick={() => setData("varient3")}
             className={`p-2 relative ${
-              data === "varient3" ? "z-50 text-black" : "bg-transparent"
+              data === "varient3" ? "z-50 " : "bg-transparent"
             }`}
           >
             Other
