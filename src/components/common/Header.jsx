@@ -36,7 +36,7 @@ const Header = () => {
               <div className="h-[50px] bg-[#f8ebe0] w-full rounded-tr-2xl rounded-tl-2xl"></div>
             </div>
           </div>
-          <Link to={"/head"}>
+          <Link to={"/"}>
             <button
               onClick={() => setData("varient")}
               className={`p-2 relative transition-all duration-300 ${
