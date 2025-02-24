@@ -10,6 +10,8 @@ const Header = () => {
     localStorage.setItem("activeTab", data);
   }, [data]);
 
+
+
   return (
     <>
       <div className="h-full bg-[#2c2c2c] items-center justify-center fixed flex">
