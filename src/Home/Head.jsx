@@ -3,7 +3,7 @@ import React from 'react'
 const Head = () => {
   return (
    <>
- <div className='w-full h-[100vh] bg-[#0D0D0D] '>adsaasdas</div>
+ <div className=' bg-[#0D0D0D] text-red-600   '>adsaasdassdffdsfsd</div>
    </>
   )
 }

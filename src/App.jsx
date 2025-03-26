@@ -8,13 +8,17 @@ function App() {
 
   return (
     <>
-<BrowserRouter>
-<Header/>
-<Routes>
-<Route path="/" element={<Head/>}/>
-</Routes>
-</BrowserRouter>
-   </>
+      <BrowserRouter>
+        <div className="flex">
+            <Header />
+            <div className="">
+              <Routes>
+                <Route path="/" element={<Head />} />
+              </Routes>
+            </div>
+          </div>
+      </BrowserRouter>
+    </>
   );
 }
 
