@@ -68,6 +68,9 @@ const Header = () => {
 
   return (
     <>
+    <div className="text-white flex justify-between w-full ">
+      <div className="">Ashish</div>
+    </div>
       {/* <div className=" bg-[#2c2c2c] items-center justify-center   flex">
         <div className="relative text-white   flex flex-col justify-center items-center w-[200px] bg-[#0D0D0D]  font-customfontinter">
           <div className="bg-[#2c2c2c] w-full h-3.5"></div>

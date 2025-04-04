@@ -111,17 +111,17 @@ const styles = {
     mixBlendMode: "overlay",
     opacity: 0.95,
   },
-  reflection: {
-    position: "absolute",
-    width: "50%",
-    height: "50%",
-    borderRadius: "50%",
-    top: "12%",
-    left: "15%",
-    background:
-      "radial-gradient(circle, rgba(255,255,255,0.9) 15%, rgba(255,255,255,0.3) 80%)",
-    opacity: 0.8,
-  },
+  // reflection: {
+  //   position: "absolute",
+  //   width: "50%",
+  //   height: "50%",
+  //   borderRadius: "50%",
+  //   top: "12%",
+  //   left: "15%",
+  //   background:
+  //     "radial-gradient(circle, rgba(255,255,255,0.9) 15%, rgba(255,255,255,0.3) 80%)",
+  //   opacity: 0.8,
+  // },
   eye: {
     width: "18px",
     height: "30px",
