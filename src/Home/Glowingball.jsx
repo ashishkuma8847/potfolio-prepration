@@ -1,6 +1,29 @@
 import React, { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Glowingball() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: false,
+      offset: 0,  
+    });
+  
+    const handleScroll = () => {
+      Aos.refresh();
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  
+
+  
   const [eyePosition, setEyePosition] = useState({ x: 0, y: 0 });
   const [isBlinking, setIsBlinking] = useState(false);
 
@@ -42,7 +65,20 @@ function Glowingball() {
   
 
   return (
-    // <div style={styles.container}>
+    <>
+  {/* <section style={{ height: "100vh" }}>
+  <h1 className="text-white">Welcome to my site</h1>
+</section>
+
+<section data-aos="fade-up" data-aos-delay="500">
+  <h2 className="text-black ">Main Scroll par aaunga!</h2>
+</section>
+
+<section data-aos="zoom-in" data-aos-delay="500">
+  <h2 className="text-black">Main 300ms delay se aaunga!</h2>
+</section> */}
+
+    {/* // <div style={styles.container}> */}
       <div style={styles.crystalBall}>
         <div style={styles.glassOverlay}></div>
 
@@ -70,7 +106,8 @@ function Glowingball() {
           }}
         ></div>
       </div>
-    // </div>
+    {/* // </div> */}
+    </>
   );
 }
 
