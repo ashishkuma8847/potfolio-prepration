@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from '../Home/Head'
-import Glowingball from '../Home/Glowingball'
+// import Glowingball from '../Home/Glowingball'
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       animate="animate"
       exit="exit"
     > */}
-  <Glowingball />
+  {/* <Glowingball /> */}
   <Head/>
   {/* </motion.div> */}
   </>

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Mousepointer from "./other/Mousepointer";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import WavyBackground from "./components/ui/wavy-background";
 
 const AnimatedRoutes = () => {
   const location = useLocation(); 
@@ -37,12 +38,10 @@ const App = () => {
       ) : (""
       )} */}
         <Router>
-      <div style={{ backgroundColor: "#0D0D0D", height: "100vh", color: "#0D0D0D",  width: "100vw"}}>  
-
           <Header />
+<WavyBackground/>
       <Mousepointer />
           <AnimatedRoutes />
-          </div>
         </Router>
     </>
   );
